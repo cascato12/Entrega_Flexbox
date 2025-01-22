@@ -43,17 +43,21 @@ header > ul {
   border: none;
 }
 
-button {
+.head_button {
   width: 200px;
   height: 50px;
-  color: aliceblue;
   padding-right: 50px;
+  color: aliceblue;
   font-weight: 750;
   background: linear-gradient(to right, black 0%, black 50%, aliceblue 85%);
   text-decoration: none;
   border: none;
 }
+
 .compra {
+  width: 200px;
+  height: 50px;
+  padding-right: 50px;
   font-weight: 1000;
   color: black;
   background: linear-gradient(
@@ -62,6 +66,8 @@ button {
     rgb(92, 154, 190) 50%,
     aliceblue 85%
   );
+  text-decoration: none;
+  border: none;
 }
 
 .menu {
@@ -80,4 +86,43 @@ button {
   .menu {
     display: block;
   }
+}
+
+/*A PARTIR DE AQUí EMPIEZA EL MAIN*/
+
+.fondo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(50%);
+}
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100svh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.derecha {
+  width: 40%;
+  min-width: 516px;
+}
+
+.derecha > h1 {
+  font-size: 50px;
+  color: aliceblue;
+}
+
+.derecha > p {
+  font-size: 25px;
+  color: aliceblue;
+}
+
+.botones {
+  display: flex;
+  margin-top: 30px;
+  gap: 100px;
 }
