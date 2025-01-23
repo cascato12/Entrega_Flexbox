@@ -11,7 +11,7 @@ body {
   padding: 0;
   min-height: 100vh;
   background-color: #000000;
-  color: #9ad79b;
+  color: aliceblue;
 }
 
 header {
@@ -19,20 +19,21 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10%;
-  padding: 4%;
+  padding: 10px 20px;
   background-color: aliceblue;
 }
 
-header > img {
-  width: 200px;
-  height: 100px;
+header > .logo {
+  max-width: 150px;
+  height: auto;
+  flex-shrink: 1;
 }
 
 header > ul {
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button-list {
@@ -76,9 +77,13 @@ header > ul {
   height: 50px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   header {
     padding: 5%;
+  }
+  header > .logo {
+    max-width: 200px;
+    height: auto;
   }
   header > .button-list {
     display: none;
@@ -91,6 +96,10 @@ header > ul {
 /*A PARTIR DE AQUí EMPIEZA EL MAIN*/
 
 .fondo {
+  background-image: url('./assets/midgarfiltro.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -103,7 +112,7 @@ section {
   min-height: 100svh;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 30px;
 }
 
 .derecha {
@@ -117,6 +126,7 @@ section {
 }
 
 .derecha > p {
+  margin-top: 30px;
   font-size: 25px;
   color: aliceblue;
 }
@@ -124,5 +134,49 @@ section {
 .botones {
   display: flex;
   margin-top: 30px;
-  gap: 100px;
+  gap: 50px;
+}
+.trailer {
+  display: flex;
+  flex-flow: column;
+}
+
+.trailer > h1 {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: aliceblue;
+}
+
+.TRAILER > iframe {
+  align-self: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 550px) {
+  .derecha > h1 {
+    font-size: 35px;
+  }
+  .derecha > p {
+    font-size: 15px;
+  }
+  .derecha {
+    width: 100%;
+    min-width: 0px;
+  }
+  .trailer > h1 {
+    font-size: 35px;
+  }
+}
+
+/*PERSONAJES*/
+.PERSONAJES > {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100svh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
 }
