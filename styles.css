@@ -171,6 +171,9 @@ section {
   .trailer > h1 {
     font-size: 35px;
   }
+  .fondo {
+    height: 150%;
+  }
 }
 
 /*PERSONAJES*/
@@ -244,6 +247,12 @@ section {
   }
 }
 
+@media (max-width: 670px) {
+  .fondo2 {
+    height: 350%;
+  }
+}
+
 /*Aquíe empieza el footer*/
 footer {
   position: relative;
@@ -285,6 +294,6 @@ footer > div > ul > li > p {
 
 @media (max-width: 420px) {
   footer {
-    height: 83%;
+    height: 120%;
   }
 }
